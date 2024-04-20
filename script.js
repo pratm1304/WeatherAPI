@@ -2,7 +2,9 @@
 
 async function getData() {
     let city = document.querySelector('input').value;
+    city = city.trim();
     city = city.charAt(0).toUpperCase() + city.slice(1).toLowerCase();
+
     await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=89fa246160410dff1d548138c61317bc`)
         .then(response => response.json())
         .then (data => {
