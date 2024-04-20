@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">WeatherNow 🌤️</h1>
+    <div class="inputDiv">
+        <input type="text" id="inputValue" placeholder="Enter City">
+        <button onclick="getData()" id="submitBtn" obc>Submit</button>
+    </div>
+
+    <div class="card">
+        <h1 id="place">Delhi</h1>
+        <h2 id="temp">27°C</h2>
+        <p id="tempM">25°C &nbsp; 30°C</p>
+        <div class="weatherDesc">
+            <h2 id="desc">Haze</h2>
+            <img id="pic" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+        </div>
+        <h3 id="humidity">30%</h3>
+        <h3 id="wind">3KpH</h3>
+
+    </div>
+    <p class="footer" style="text-align: center;">Made by Pratham</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
